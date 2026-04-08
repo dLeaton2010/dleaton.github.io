@@ -3,52 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>David Leaton | CS 499 ePortfolio</title>
+  <title>David Leaton | Computer Science ePortfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>David Leaton</h1>
-    <p>B.S. Computer Science | CS 499 Capstone ePortfolio</p>
+  <header class="site-header">
+    <div class="container">
+      <h1>David Leaton</h1>
+      <p class="tagline">Computer Science ePortfolio</p>
+    </div>
   </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="self-assessment.html">Self-Assessment</a>
-    <a href="code-review.html">Code Review</a>
-    <a href="artifact1.html">Software Engineering</a>
-    <a href="artifact2.html">Algorithms & Data Structures</a>
-    <a href="artifact3.html">Databases</a>
+  <nav class="site-nav">
+    <div class="container nav-links">
+      <a href="index.html">Home</a>
+      <a href="self-assessment.html">Self-Assessment</a>
+      <a href="code-review.html">Code Review</a>
+      <a href="artifact1.html">Artifact 1</a>
+      <a href="artifact2.html">Artifact 2</a>
+      <a href="artifact3.html">Artifact 3</a>
+    </div>
   </nav>
 
-  <main>
-    <section>
+  <main class="container">
+    <section class="hero-card">
       <h2>Welcome</h2>
       <p>
-        Welcome to my computer science ePortfolio. This portfolio highlights my growth
-        throughout the SNHU Computer Science program and showcases enhanced artifacts
-        in software design and engineering, algorithms and data structures, and databases.
+        Welcome to my Computer Science ePortfolio. This portfolio highlights my growth
+        throughout the Southern New Hampshire University Computer Science program and
+        showcases enhanced artifacts in software design and engineering, algorithms and
+        data structures, and databases.
       </p>
       <p>
         Each section includes the original project context, the enhancements I completed,
-        and a narrative explaining the skills and course outcomes demonstrated through the work.
+        and a narrative explaining the skills and course outcomes demonstrated through
+        the work.
       </p>
     </section>
 
-    <section>
-      <h2>Portfolio Sections</h2>
-      <ul>
-        <li><a href="self-assessment.html">Professional Self-Assessment</a></li>
-        <li><a href="code-review.html">Informal Code Review</a></li>
-        <li><a href="artifact1.html">Artifact 1: Event Tracking Android Application</a></li>
-        <li><a href="artifact2.html">Artifact 2: Smart Thermostat Control System</a></li>
-        <li><a href="artifact3.html">Artifact 3: MongoDB Client-Server Application</a></li>
-      </ul>
+    <section class="content-card">
+      <h2>Portfolio Contents</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <h3>Professional Self-Assessment</h3>
+          <p>
+            A reflection on my experience in the Computer Science program, the skills I
+            developed, and how this portfolio represents my professional growth.
+          </p>
+          <a class="button-link" href="self-assessment.html">View Self-Assessment</a>
+        </div>
+
+        <div class="portfolio-item">
+          <h3>Informal Code Review</h3>
+          <p>
+            A walkthrough of the original artifacts, key areas for improvement, and the
+            enhancement plans that guided my capstone work.
+          </p>
+          <a class="button-link" href="code-review.html">View Code Review</a>
+        </div>
+
+        <div class="portfolio-item">
+          <h3>Artifact 1: Software Design and Engineering</h3>
+          <p>
+            Event Tracking Android Application enhanced with event editing, validation,
+            notification improvements, and conflict detection.
+          </p>
+          <a class="button-link" href="artifact1.html">View Artifact 1</a>
+        </div>
+
+        <div class="portfolio-item">
+          <h3>Artifact 2: Algorithms and Data Structures</h3>
+          <p>
+            Thermostat Control System enhanced with predictive temperature control
+            and a buffer to reduce short cycling.
+          </p>
+          <a class="button-link" href="artifact2.html">View Artifact 2</a>
+        </div>
+
+        <div class="portfolio-item">
+          <h3>Artifact 3: Databases</h3>
+          <p>
+            MongoDB Client-Server Application enhanced with record validation and
+            advanced search query functionality.
+          </p>
+          <a class="button-link" href="artifact3.html">View Artifact 3</a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 David Leaton</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 David Leaton | CS 499 Computer Science Capstone</p>
+    </div>
   </footer>
 </body>
 </html>
