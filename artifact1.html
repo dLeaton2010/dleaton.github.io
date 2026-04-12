@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artifact 1 | David Leaton</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <h1>David Leaton</h1>
+    <p class="tagline">B.S. Computer Science | ePortfolio</p>
+  </div>
+</header>
+
+<nav class="site-nav">
+  <div class="container nav-links">
+    <a href="index.html">Home</a>
+    <a href="self-assessment.html">Self-Assessment</a>
+    <a href="code-review.html">Code Review</a>
+    <a href="artifact1.html">Artifact 1: Software Design and Engineering</a>
+    <a href="artifact2.html">Artifact 2: Algorithms and Data Structures</a>
+    <a href="artifact3.html">Artifact 3: Databases</a>
+  </div>
+</nav>
+
+<main class="container">
+
+  <section class="hero-card">
+    <h2>Artifact 1: Software Design and Engineering</h2>
+    <h3>Event Tracking Android Application</h3>
+    <p>
+      This artifact is an Event Tracking Android Application originally developed in
+      CS 360: Mobile Architecture and Programming. I selected this artifact because it
+      demonstrates my ability to design and improve a mobile application using Java,
+      Android Studio, and SQLite.
+    </p>
+    <p>
+      For my enhancement, I focused on improving the event management workflow by adding
+      event editing, stronger input validation, improved notification handling, and
+      event conflict detection.
+    </p>
+  </section>
+
+  <section class="content-card">
+    <h2>Artifact Overview</h2>
+    <p>
+      The original application allowed users to create accounts, log in, add events,
+      view events, and receive notifications for scheduled reminders. While the original
+      project was functional, it had several limitations. Users could create events but
+      could not edit them, validation was limited, and scheduled notifications were not
+      always properly synchronized when an event was changed or deleted.
+    </p>
+    <p>
+      The enhanced version improves the reliability and usability of the system by
+      allowing event editing, preventing invalid data entry, detecting duplicate event
+      scheduling conflicts, and ensuring notifications are correctly updated or removed
+      when event data changes.
+    </p>
+  </section>
+
+  <section class="content-card">
+    <h2>Enhancement Highlights</h2>
+    <ul>
+      <li>Added event editing functionality using the existing Add Event screen</li>
+      <li>Improved input validation for required fields and future date/time checks</li>
+      <li>Implemented event conflict detection to prevent duplicate scheduling</li>
+      <li>Improved notification handling so reminders are updated and canceled correctly</li>
+    </ul>
+  </section>
+
+  <section class="content-card">
+    <h2>Selected Code Screenshots</h2>
+    <p>
+      The screenshots below highlight key improvements made to the artifact during the
+      enhancement process.
+    </p>
+
+    <div class="screenshot-block">
+      <h3>Figure 1: Edit Mode and Event Update Logic</h3>
+      <img src="images/artifact1-edit-mode.png" alt="Artifact 1 edit mode and update logic screenshot">
+    </div>
+
+    <div class="screenshot-block">
+      <h3>Figure 2: Input Validation and Conflict Detection</h3>
+      <img src="images/artifact1-validation.png" alt="Artifact 1 input validation and conflict detection screenshot">
+    </div>
+
+    <div class="screenshot-block">
+      <h3>Figure 3: Notification Scheduling and Cancellation Improvements</h3>
+      <img src="images/artifact1-notifications.png" alt="Artifact 1 notification logic screenshot">
+    </div>
+  </section>
+
+  <section class="content-card">
+    <h2>Narrative</h2>
+
+    <h3>Artifact Description</h3>
+    <p>
+      The artifact I selected for this enhancement is my Event Tracking Android Application,
+      which I originally developed in CS 360: Mobile Architecture and Programming. The
+      purpose of this application is to allow users to create, view, and manage events,
+      as well as receive notifications as reminders for scheduled events. The application
+      includes features such as account login, event creation, and notification scheduling.
+      For this milestone, I focused on enhancing the event management functionality to
+      improve usability, data validation, and overall system reliability.
+    </p>
+
+    <h3>Justification and Enhancements</h3>
+    <p>
+      I selected this artifact for my ePortfolio because it demonstrates my ability to
+      design and implement a functional mobile application using Android Studio. It
+      highlights my understanding of user interface design, database interaction, and
+      event-driven programming. Additionally, this artifact provided a strong foundation
+      for applying software engineering improvements through enhancement rather than
+      building from scratch.
+    </p>
+    <p>
+      For this milestone, I implemented several meaningful enhancements that significantly
+      improved the functionality and reliability of the application. The first major
+      enhancement was the addition of event editing functionality. This allows users to
+      modify existing events instead of deleting and recreating them, improving usability
+      and efficiency. I reused the existing event creation interface and added logic to
+      detect edit mode, pre-fill fields, and update records in the database.
+    </p>
+    <p>
+      The second enhancement focused on improving input validation. I added checks to
+      ensure that required fields are not empty, that event names meet a minimum length
+      requirement, and that the selected date and time are valid and scheduled in the
+      future. This prevents invalid or unrealistic data from being stored and improves
+      the overall user experience.
+    </p>
+    <p>
+      The third enhancement was the implementation of event conflict detection. The
+      application now checks whether an event already exists at the same date and time
+      before allowing a new event to be created or updated. This helps prevent duplicate
+      scheduling and demonstrates improved data integrity and logical validation.
+    </p>
+    <p>
+      Another important improvement was made to the notification system. I implemented a
+      consistent method for generating unique identifiers for scheduled notifications,
+      which allowed me to properly cancel and reschedule reminders when events are updated
+      or deleted. This resolved issues where outdated notifications would still trigger
+      after changes were made.
+    </p>
+    <p>
+      Originally, my enhancement plan also included implementing password hashing for
+      improved security. However, during development I chose to prioritize enhancements
+      that directly improved the core functionality of event management, such as editing,
+      validation, and notification handling. These changes provided a more impactful
+      improvement for this milestone, while password hashing remains a potential future
+      enhancement focused on security.
+    </p>
+
+    <h3>Course Outcomes and Updates</h3>
+    <p>
+      Through these enhancements, I was able to make strong progress toward several course
+      outcomes. I demonstrated the ability to design and evaluate computing solutions by
+      improving the application’s functionality and handling edge cases such as invalid
+      input and scheduling conflicts. I also demonstrated the use of appropriate tools and
+      techniques in computing practices by working with Android Studio, SQLite databases,
+      and system services such as AlarmManager.
+    </p>
+    <p>
+      Additionally, I showed progress toward developing a security mindset by identifying
+      potential weaknesses in the application, such as improper input handling and
+      inconsistent notification behavior, and implementing solutions to address them.
+      While I did not implement password hashing in this milestone, I recognize its
+      importance and may incorporate it in future iterations.
+    </p>
+
+    <h3>Reflection on the Process</h3>
+    <p>
+      Enhancing this artifact was a valuable experience because it required me to revisit
+      an existing project and improve it rather than simply building something new. This
+      process helped me better understand how software evolves over time and how small
+      changes can significantly improve usability and reliability.
+    </p>
+    <p>
+      One of the biggest things I learned was the importance of maintaining consistency
+      across different parts of the system. For example, when working on the notification
+      system, I had to ensure that the same identifier was used when scheduling and
+      canceling reminders. Without this consistency, the system would behave unpredictably.
+    </p>
+    <p>
+      Another key learning experience was implementing validation and conflict detection.
+      These improvements required me to think beyond basic functionality and consider
+      real-world usage scenarios, such as preventing duplicate events or invalid input.
+      This helped me develop a more defensive and user-focused approach to programming.
+    </p>
+    <p>
+      One challenge I faced was managing how different components of the application
+      interacted with each other, especially between the user interface, database, and
+      notification system. Fixing issues such as duplicate notifications required careful
+      debugging and a better understanding of how Android services work.
+    </p>
+    <p>
+      Overall, this enhancement process strengthened my ability to analyze, improve, and
+      maintain an existing codebase. It also reinforced the importance of planning,
+      testing, and iterative development in software engineering.
+    </p>
+  </section>
+
+  <section class="content-card">
+    <h2>Files</h2>
+    <p>
+      Use the links below to access the original and enhanced versions of this artifact.
+    </p>
+    <ul>
+      <li><a href="files/artifact1-original.zip" target="_blank">Original Artifact Files</a></li>
+      <li><a href="files/artifact1-enhanced.zip" target="_blank">Enhanced Artifact Files</a></li>
+      <li><a href="files/artifact1-narrative.docx" target="_blank">Artifact 1 Narrative</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 David Leaton | CS 499 Computer Science Capstone</p>
+  </div>
+</footer>
+
+</body>
+</html>

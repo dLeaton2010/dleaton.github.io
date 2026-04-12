@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artifact 3 | David Leaton</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <h1>David Leaton</h1>
+    <p class="tagline">B.S. Computer Science | ePortfolio</p>
+  </div>
+</header>
+
+<nav class="site-nav">
+  <div class="container nav-links">
+    <a href="index.html">Home</a>
+    <a href="self-assessment.html">Self-Assessment</a>
+    <a href="code-review.html">Code Review</a>
+    <a href="artifact1.html">Artifact 1: Software Design and Engineering</a>
+    <a href="artifact2.html">Artifact 2: Algorithms and Data Structures</a>
+    <a href="artifact3.html">Artifact 3: Databases</a>
+  </div>
+</nav>
+
+<main class="container">
+
+  <section class="hero-card">
+    <h2>Artifact 3: Databases</h2>
+    <h3>MongoDB Client-Server Application</h3>
+    <p>
+      This artifact is my MongoDB client-server application, originally developed in
+      CS 340: Advanced Programming Concepts. I selected this artifact because it
+      demonstrates my ability to work with database systems, CRUD operations, data
+      validation, and backend query logic using Python and MongoDB.
+    </p>
+    <p>
+      For my enhancement, I focused on improving record validation and adding more
+      flexible search functionality to improve data integrity and query usability.
+    </p>
+  </section>
+
+  <section class="content-card">
+    <h2>Artifact Overview</h2>
+    <p>
+      The original artifact was designed to support CRUD operations against a MongoDB
+      database containing animal shelter records. It provided the ability to connect to
+      the database, insert records, query documents, update documents, and delete records.
+      This created a functional foundation for interacting with the data from a Python
+      application.
+    </p>
+    <p>
+      While the original version supported the main CRUD operations, it did not fully
+      validate the completeness of records before insertion, and its query handling could
+      be improved to support more flexible filtering. The enhanced version improves the
+      reliability of stored data and expands how records can be searched and retrieved.
+    </p>
+  </section>
+
+  <section class="content-card">
+    <h2>Enhancement Highlights</h2>
+    <ul>
+      <li>Added record validation before insertion to improve data integrity</li>
+      <li>Defined required fields for inserted MongoDB records</li>
+      <li>Implemented an advanced search function using optional filters</li>
+      <li>Added documented security awareness for database credential handling</li>
+    </ul>
+  </section>
+
+  <section class="content-card">
+    <h2>Selected Code Screenshots</h2>
+    <p>
+      The screenshots below highlight the major database improvements made to this artifact.
+    </p>
+
+    <div class="screenshot-block">
+      <h3>Figure 1: Record Validation Function</h3>
+      <img src="images/artifact3-validate-record.png" alt="Record validation function screenshot">
+    </div>
+
+    <div class="screenshot-block">
+      <h3>Figure 2: Advanced Search Function</h3>
+      <img src="images/artifact3-advanced-search.png" alt="Advanced search function screenshot">
+    </div>
+  </section>
+
+  <section class="content-card">
+    <h2>Narrative</h2>
+
+    <h3>Artifact Description</h3>
+    <p>
+      The artifact I selected for this enhancement is my MongoDB client-server application,
+      which I originally developed in CS 340: Advanced Programming Concepts. This project
+      was designed to demonstrate CRUD operations using a MongoDB database. The application
+      connects to a database, allows records to be inserted, queried, updated, and deleted,
+      and provides a structured way to interact with stored data. The original version of
+      this project focused on implementing the basic CRUD functionality and ensuring that
+      the database connection and operations worked correctly.
+    </p>
+    <p>
+      For this milestone, I focused on improving the reliability and flexibility of the
+      database operations by enhancing how data is validated before insertion and how
+      queries can be constructed dynamically.
+    </p>
+
+    <h3>Justification and Enhancements</h3>
+    <p>
+      I selected this artifact for my ePortfolio because it demonstrates my ability to
+      work with databases, manage data, and implement backend logic that interacts with
+      a database system. This project highlights important database skills such as data
+      validation, query construction, and CRUD operations, all of which are essential for
+      modern software development.
+    </p>
+    <p>
+      The original implementation allowed data to be inserted and queried, but it did not
+      fully validate the structure or completeness of the data being stored. This could
+      lead to inconsistent or incomplete records being added to the database. To address
+      this, I implemented a validation method that ensures all required fields are present
+      before a record is inserted. This improves data integrity and helps prevent errors
+      that could occur later when querying or processing the data.
+    </p>
+    <p>
+      In addition to improving validation, I enhanced the querying functionality by adding
+      an advanced search method. This method allows dynamic queries to be built based on
+      optional filters such as breed, outcome type, and age range. Instead of requiring a
+      fixed query structure, this approach allows more flexible and efficient data retrieval,
+      which better reflects how real-world database applications operate.
+    </p>
+    <p>
+      These enhancements demonstrate my ability to improve an existing system by addressing
+      both data quality and query flexibility. They also show my understanding of how
+      database design decisions can impact the reliability and usability of an application.
+    </p>
+    <p>
+      To further illustrate these enhancements, selected portions of the updated code are
+      included above, highlighting the implementation of data validation and dynamic query
+      construction.
+    </p>
+
+    <h3>Course Outcomes and Updates</h3>
+    <p>
+      Through this enhancement, I made strong progress toward the course outcomes related
+      to designing and implementing computing solutions that involve storing, retrieving,
+      and managing data. The addition of the validation method directly supports best
+      practices in database design by ensuring that only complete and properly structured
+      data is inserted into the system. This aligns with the outcome focused on using
+      appropriate tools and techniques to implement computing solutions that deliver value.
+    </p>
+    <p>
+      The advanced search functionality demonstrates my ability to design flexible and
+      efficient data retrieval methods, which aligns with the outcome related to solving
+      problems using appropriate computing practices. By allowing dynamic query construction,
+      the system becomes more adaptable and better suited for real-world use cases.
+    </p>
+    <p>
+      I also addressed aspects of the security mindset outcome by recognizing that sensitive
+      information, such as database credentials, should not be hardcoded and should instead
+      be managed securely. While I did not fully implement that change in this version, I
+      documented it as an important consideration for future improvement.
+    </p>
+    <p>
+      At this point, I believe this artifact continues to align well with my original
+      outcome-coverage plan, and no major updates are needed.
+    </p>
+
+    <h3>Reflection on the Process</h3>
+    <p>
+      Enhancing this artifact helped me better understand the importance of data integrity
+      and how small improvements in validation can have a significant impact on the overall
+      reliability of a system. One of the biggest things I learned was that allowing
+      incomplete or inconsistent data into a database can create larger problems later when
+      trying to retrieve or analyze that data. By adding validation before insertion, I was
+      able to prevent those issues at the source.
+    </p>
+    <p>
+      Another key takeaway was the importance of flexible query design. The original
+      implementation relied on predefined queries, but real-world applications often require
+      more dynamic filtering based on user input. Implementing the advanced search method
+      helped me understand how to build queries programmatically and how to use MongoDB
+      operators to support more complex conditions.
+    </p>
+    <p>
+      The biggest challenge I faced was making sure the enhancements were meaningful without
+      overcomplicating the existing code. I wanted to improve the functionality while still
+      keeping the structure of the original project intact. By focusing on validation and
+      query flexibility, I was able to enhance the artifact in a way that clearly
+      demonstrates my skills while maintaining a clean and understandable design.
+    </p>
+    <p>
+      Overall, this process strengthened my understanding of database operations, data
+      validation, and query construction, and it helped me see how these concepts apply
+      to real-world software development.
+    </p>
+  </section>
+
+  <section class="content-card">
+    <h2>Files</h2>
+    <p>
+      Use the links below to access the original and enhanced versions of this artifact.
+    </p>
+    <ul>
+      <li><a href="files/artifact3-original.zip" target="_blank">Original Artifact File</a></li>
+      <li><a href="files/artifact3-enhanced.zip" target="_blank">Enhanced Artifact File</a></li>
+      <li><a href="files/artifact3-narrative.docx" target="_blank">Artifact 3 Narrative</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 David Leaton | CS 499 Computer Science Capstone</p>
+  </div>
+</footer>
+
+</body>
+</html>
